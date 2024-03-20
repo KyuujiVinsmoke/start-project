@@ -298,3 +298,6 @@ Informações
 
   //Listar rotas
   php artisan route:list
+
+  //Banco de dados IFPR
+  http://localhost/phpmyadmin/
