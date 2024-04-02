@@ -16,8 +16,8 @@ return new class extends Migration
             $table->foreign('role_id')->references('id')->on('roles');
             $table->unsignedBigInteger('resource_id');
             $table->foreign('resource_id')->references('id')->on('resources');
-            $table->boolean('permission');
             $table->primary(['role_id', 'resource_id']);
+            $table->boolean('permission');
             $table->timestamps();
         });
     }
